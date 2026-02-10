@@ -1,0 +1,59 @@
+# movie-sentiment-ai
+```markdown
+🎬 Thai Movie Sentiment Analysis: Model Iteration
+
+โปรเจกต์วิเคราะห์อารมณ์จากรีวิวภาพยนตร์ โดยเปรียบเทียบประสิทธิภาพระหว่างโมเดลรุ่นเริ่มต้น (Baseline) และรุ่นที่ปรับปรุงแล้ว (Optimized)
+
+---
+
+📂 โครงสร้างไฟล์ที่จำเป็น (Required Files)
+เพื่อให้แอปพลิเคชันทำงานได้อย่างสมบูรณ์ ใน Repository นี้ประกอบด้วย:
+1. `app.py`: ไฟล์หลักสำหรับแสดงผลหน้าเว็บ Interface
+2. `requirements.txt`: รายชื่อ Library ที่ต้องติดตั้งบน Server
+3. `model.joblib`: ไฟล์โมเดล V1 (Baseline)
+4. `model_v2.joblib`: ไฟล์โมเดล V2 (Improved)
+5. `8.synthetic_netflix_like_thai_reviews_3class_hard_5000.csv`: ไฟล์ฐานข้อมูลรีวิว
+
+---
+
+```
+
+⚙️ วิธีการติดตั้งและใช้งาน (Local Setup)
+
+
+1. **Clone Repository**
+
+```bash
+git clone [URL-Git]
+
+```
+
+2. **ติดตั้ง Library**
+
+```bash
+pip install -r requirements.txt
+
+```
+
+3. **รันแอปพลิเคชัน**
+
+```bash
+streamlit run app.py
+
+```
+
+---
+
+🧑‍💻 ผู้จัดทำ (Team)
+
+* **[ชื่อของคุณ]** - รหัสนักศึกษา [รหัสของคุณ]
+* **นายจิรภัทร พัฒนเนติธรรม** - รหัสนักศึกษา 66026460
+* **นายพีรวิชญ์ ลัทธิศักดิ์** - รหัสนักศึกษา 66026561
+* **นายวรเมธ เชี่ยวชาญ** - รหัสนักศึกษา 6604222
+---
+
+*Project for: NLP & Machine Learning Class*
+
+---
+
+
