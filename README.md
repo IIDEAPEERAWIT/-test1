@@ -1,59 +1,92 @@
-# movie-sentiment-ai
-```markdown
-🎬 Thai Movie Sentiment Analysis: Model Iteration
+# 🎬 Thai Movie Sentiment Analysis
 
-โปรเจกต์วิเคราะห์อารมณ์จากรีวิวภาพยนตร์ โดยเปรียบเทียบประสิทธิภาพระหว่างโมเดลรุ่นเริ่มต้น (Baseline) และรุ่นที่ปรับปรุงแล้ว (Optimized)
+A Natural Language Processing and Machine Learning project for classifying **Thai movie reviews** into sentiment categories through an interactive Streamlit application.
 
----
+The project compares two trained sentiment-classification models — a baseline model and an improved model — and presents their predictions and confidence scores side by side.
 
-📂 โครงสร้างไฟล์ที่จำเป็น (Required Files)
-เพื่อให้แอปพลิเคชันทำงานได้อย่างสมบูรณ์ ใน Repository นี้ประกอบด้วย:
-1. `app.py`: ไฟล์หลักสำหรับแสดงผลหน้าเว็บ Interface
-2. `requirements.txt`: รายชื่อ Library ที่ต้องติดตั้งบน Server
-3. `model.joblib`: ไฟล์โมเดล V1 (Baseline)
-4. `model_v2.joblib`: ไฟล์โมเดล V2 (Improved)
-5. `8.synthetic_netflix_like_thai_reviews_3class_hard_5000.csv`: ไฟล์ฐานข้อมูลรีวิว
+## ✨ Features
 
----
+- Classifies Thai movie reviews into **Positive, Negative, or Neutral** sentiment
+- Compares predictions from two trained models
+- Displays confidence scores for each prediction
+- Includes random samples from a 5,000-review synthetic Thai movie review dataset
+- Uses Thai tokenization with **PyThaiNLP (newmm)**
+- Provides an interactive **Streamlit** web interface
 
+## 🧠 Machine Learning Pipeline
+
+The application uses:
+
+- **PyThaiNLP** for Thai word tokenization
+- **TF-IDF** text vectorization
+- **Logistic Regression** for sentiment classification
+- Two serialized models for baseline vs. improved model comparison
+
+## 🛠 Tech Stack
+
+- Python
+- Streamlit
+- scikit-learn
+- PyThaiNLP
+- Pandas
+- NumPy
+- Joblib
+
+## 📁 Project Structure
+
+```text
+.
+├── app.py
+├── requirements.txt
+├── model.joblib
+├── model_v2.joblib
+└── 8.synthetic_netflix_like_thai_reviews_3class_hard_5000.csv
 ```
 
-⚙️ วิธีการติดตั้งและใช้งาน (Local Setup)
+## 🚀 Run Locally
 
-
-1. **Clone Repository**
+### 1. Clone the repository
 
 ```bash
-git clone [URL-Git]
-
+git clone https://github.com/IIDEAPEERAWIT/-test1.git
+cd -test1
 ```
 
-2. **ติดตั้ง Library**
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
-
 ```
 
-3. **รันแอปพลิเคชัน**
+### 3. Start the application
 
 ```bash
 streamlit run app.py
-
 ```
 
+## 🖥 Application Pages
+
+### 🔍 Analyze Review
+Enter a Thai movie review and compare the sentiment prediction and confidence score from both models.
+
+### 📊 Project Info
+View a summary of the dataset, preprocessing pipeline, model approach, and evaluation section.
+
+### 💬 AI Assistant
+A simple chat-style interface included in the application UI.
+
+## 👨‍💻 Team
+
+- Jirapat Pattanatetham
+- Peerawit Lattisak
+- Woramet Chiaochan
+
+## 🎓 Academic Project
+
+Developed as part of an **NLP & Machine Learning** course at the **University of Phayao**.
+
 ---
 
-🧑‍💻 ผู้จัดทำ (Team)
-
-* **[ชื่อของคุณ]** - รหัสนักศึกษา [รหัสของคุณ]
-* **นายจิรภัทร พัฒนเนติธรรม** - รหัสนักศึกษา 66026460
-* **นายพีรวิชญ์ ลัทธิศักดิ์** - รหัสนักศึกษา 66026561
-* **นายวรเมธ เชี่ยวชาญ** - รหัสนักศึกษา 6604222
----
-
-*Project for: NLP & Machine Learning Class*
-
----
-
-
+**Peerawit Lattisak**  
+Computer Science, University of Phayao  
+📧 peerawitidea@gmail.com
