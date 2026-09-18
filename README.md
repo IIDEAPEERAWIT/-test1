@@ -1,36 +1,40 @@
 # 🎬 Thai Movie Sentiment Analysis
 
-A Natural Language Processing and Machine Learning project for classifying **Thai movie reviews** into sentiment categories through an interactive Streamlit application.
+A Natural Language Processing and Machine Learning project for classifying **Thai movie reviews** into sentiment categories through an interactive **Streamlit** application.
 
-The project compares two trained sentiment-classification models — a baseline model and an improved model — and presents their predictions and confidence scores side by side.
+The application compares two trained sentiment-classification models — a **Baseline Model** and an **Improved Model** — and shows their predictions and confidence scores side by side.
 
 ## ✨ Features
 
 - Classifies Thai movie reviews into **Positive, Negative, or Neutral** sentiment
-- Compares predictions from two trained models
-- Displays confidence scores for each prediction
-- Includes random samples from a 5,000-review synthetic Thai movie review dataset
-- Uses Thai tokenization with **PyThaiNLP (newmm)**
-- Provides an interactive **Streamlit** web interface
+- Compares two trained models in the same interface
+- Displays prediction confidence when the model supports `predict_proba`
+- Includes random review samples from a synthetic Thai movie review dataset
+- Provides a clean Streamlit interface for demonstration and portfolio use
+- Includes a project information page with the project scope and team
 
-## 🧠 Machine Learning Pipeline
+## 🧠 Machine Learning Approach
 
-The application uses:
+The project uses a text-classification workflow based on:
 
-- **PyThaiNLP** for Thai word tokenization
 - **TF-IDF** text vectorization
-- **Logistic Regression** for sentiment classification
-- Two serialized models for baseline vs. improved model comparison
+- **Logistic Regression** sentiment classification
+- A baseline model and an improved model saved with **Joblib**
+- Evaluation-focused comparison through the web application
 
 ## 🛠 Tech Stack
 
+**Language**
 - Python
-- Streamlit
+
+**Machine Learning / Data**
 - scikit-learn
-- PyThaiNLP
 - Pandas
 - NumPy
 - Joblib
+
+**Application**
+- Streamlit
 
 ## 📁 Project Structure
 
@@ -40,7 +44,9 @@ The application uses:
 ├── requirements.txt
 ├── model.joblib
 ├── model_v2.joblib
-└── 8.synthetic_netflix_like_thai_reviews_3class_hard_5000.csv
+├── 8.synthetic_netflix_like_thai_reviews_3class_hard_5000.csv
+├── .gitignore
+└── README.md
 ```
 
 ## 🚀 Run Locally
@@ -52,13 +58,33 @@ git clone https://github.com/IIDEAPEERAWIT/-test1.git
 cd -test1
 ```
 
-### 2. Install dependencies
+### 2. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate it:
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**macOS / Linux**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Start the application
+### 4. Start the application
 
 ```bash
 streamlit run app.py
@@ -67,18 +93,15 @@ streamlit run app.py
 ## 🖥 Application Pages
 
 ### 🔍 Analyze Review
-Enter a Thai movie review and compare the sentiment prediction and confidence score from both models.
+Enter a Thai movie review and compare sentiment predictions from the Baseline Model and Improved Model.
 
 ### 📊 Project Info
-View a summary of the dataset, preprocessing pipeline, model approach, and evaluation section.
-
-### 💬 AI Assistant
-A simple chat-style interface included in the application UI.
+View the dataset scope, application purpose, technologies, and project team.
 
 ## 👨‍💻 Team
 
 - Jirapat Pattanatetham
-- Peerawit Lattisak
+- **Peerawit Lattisak**
 - Woramet Chiaochan
 
 ## 🎓 Academic Project
@@ -87,6 +110,8 @@ Developed as part of an **NLP & Machine Learning** course at the **University of
 
 ---
 
+### Contact
+
 **Peerawit Lattisak**  
-Computer Science, University of Phayao  
-📧 peerawitidea@gmail.com
+B.Sc. Computer Science, University of Phayao  
+Email: peerawitidea@gmail.com
