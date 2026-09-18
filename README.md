@@ -54,8 +54,8 @@ The project uses a text-classification workflow based on:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/IIDEAPEERAWIT/-test1.git
-cd -test1
+git clone https://github.com/IIDEAPEERAWIT/thai-movie-sentiment-analysis.git
+cd thai-movie-sentiment-analysis
 ```
 
 ### 2. Create a virtual environment
